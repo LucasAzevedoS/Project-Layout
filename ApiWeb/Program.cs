@@ -1,7 +1,12 @@
+using ApiWeb.Repositories;
+using ApiWeb.Services;
 using Keycloak.AuthServices.Authentication;
 using Microsoft.OpenApi.Models;
-
+/* teste*/
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddScoped<UtilService>();
+builder.Services.AddScoped<UsuarioRepository>();
+builder.Services.AddScoped<UsuarioService>();
 
 builder.Services.AddControllers();
 

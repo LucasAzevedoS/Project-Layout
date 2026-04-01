@@ -1,0 +1,7 @@
+﻿services:
+  apiweb:
+    image: apiweb
+    build:
+      context: .
+      dockerfile: ApiWeb/Dockerfile
+
